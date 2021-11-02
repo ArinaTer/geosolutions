@@ -1,0 +1,28 @@
+/**
+ * Footer
+ */
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 30px 35px;
+	font-size: $font-size-small;
+	z-index: 5;
+
+	p {
+		margin: 0;
+		color: $gray-light;
+	}
+	&_dev {
+		float: left;
+	}
+	&_copy {
+		float: right;
+		width: 5px;
+		white-space: nowrap;
+		transform: rotate(-90deg);
+		transform-origin: center left;
+	}
+}

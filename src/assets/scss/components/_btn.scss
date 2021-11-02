@@ -1,0 +1,18 @@
+/**
+ * Button
+ */
+
+.btn {
+	&.disabled,
+	&[disabled] {
+		opacity: 1;
+		color: $gray-light;
+		background-color: $gray;
+		border-color: $gray;
+
+		&:hover {
+			background-color: $gray;
+			border-color: $gray;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+/**
+ * Contacts
+ */
+
+.contacts {
+   p.contacts_phone {
+      margin-bottom: 10px;
+      font-size: $font-size-h2;
+      font-family: $font-family-custom;
+      letter-spacing: -0.6px;
+   }
+   dl.contacts_addr {
+      float: left;
+      margin-right: 35px;
+      line-height: 1.53846;
+
+      dt {
+         color: $gray-light;
+         font-weight: 400;
+         line-height: inherit;
+      }
+      dd {
+         font-size: $font-size-large;
+         line-height: inherit;
+      }
+   }
+}

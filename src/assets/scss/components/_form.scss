@@ -1,0 +1,39 @@
+/**
+ * Form
+ */
+
+.form {
+	&.__bid {
+		margin: 80px;
+
+		.form-group {
+			margin-bottom: 37px;
+		}
+
+		label {
+			color: $gray-light;
+			margin-top: 10px;
+			top: 17px;
+		}
+		input, textarea {
+			padding: 6px 0;
+			color: #fff;
+			font-size: $font-size-large;
+			border-radius: 0;
+			box-shadow: none;
+			border-width: 0;
+			border-bottom: 2px solid $gray;
+			background-color: transparent;
+		}
+		input {
+			height: 52px;
+		}
+		textarea {
+			height: 100px;
+			resize: none;
+		}
+		button {
+			margin-top: 13px;
+		}
+	}
+}

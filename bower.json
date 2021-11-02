@@ -1,0 +1,23 @@
+{
+  "name": "geosolutions",
+  "version": "0.0.0",
+  "authors": [
+    "Artem Terehin <a.terehin@nobrand.team>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.7",
+    "gmap3": "~7.2.0",
+    "jquery-validation": "~1.16.0"
+  }
+}

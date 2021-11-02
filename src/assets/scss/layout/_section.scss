@@ -1,0 +1,164 @@
+/**
+ * Section
+ */
+
+.section {
+	position: fixed;
+	top: 0;
+	left: 30px;
+	right: 30px;
+	bottom: 0;
+	z-index: 1;
+
+	.container, .container-fluid {
+		height: 100%;
+	}
+
+	.row {
+		display: table;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+
+		div[class^="col-"] {
+			display: table-cell;
+			float: none;
+			padding: 0;
+			height: 100%;
+			vertical-align: middle;
+		}
+	}
+
+	&_entry {
+		margin: 0 auto;
+		padding-left: 60px;
+		max-width: 547px;
+		opacity: 0;
+		visibility: hidden;
+
+		p {
+			font-size: $font-size-large;
+			line-height: 1.5625;
+		}
+	}
+	&_box {
+		position: relative;
+		display: table;
+		padding: 112px 45px 0 70px;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		visibility: hidden;
+
+		&_inner {
+			position: relative;
+			display: table-cell;
+			height: 100%;
+			width: 100%;
+			vertical-align: middle;
+			overflow: hidden;
+
+			&.__video {
+				video {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: auto;
+					height: 100%;
+				}
+			}
+			&.__map {
+				.gm-map {
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&.__form {
+				display: table-cell;
+				background-color: $gray-dark;
+			}
+		}
+	}
+
+	&.__active {
+		z-index: 2;
+
+		.section_entry {
+			animation: show-entry 1s ease forwards;
+		}
+		.section_box {
+			animation: show-box 1s ease forwards;
+		}
+	}
+
+	&.__default {
+		z-index: 2;
+
+		.section_entry, .section_box {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	&.__hide {
+		.section_entry {
+			animation: hide-entry 1s ease forwards;
+		}
+		.section_box {
+			animation: hide-box 1s ease forwards;
+		}
+	}
+}
+
+@keyframes show-entry {
+  from {
+  	opacity: 0;
+	visibility: hidden;
+    transform: translateX(-100%);
+  }
+  to {
+  	opacity: 1;
+	visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+@keyframes hide-entry {
+  from {
+  	opacity: 1;
+	visibility: visible;
+    transform: translateY(0);
+  }
+  to {
+  	opacity: 0;
+	visibility: hidden;
+    transform: translateY(-150%);
+  }
+}
+
+@keyframes show-box {
+  from {
+  	opacity: 0;
+	visibility: hidden;
+    transform: translateY(100%);
+  }
+  to {
+  	opacity: 1;
+	visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hide-box {
+  from {
+  	opacity: 1;
+	visibility: visible;
+    transform: translateX(0);
+  }
+  to {
+  	opacity: 0;
+	visibility: hidden;
+    transform: translateX(100%);
+  }
+}

@@ -1,0 +1,49 @@
+/**
+ * Sections Nav
+ */
+
+.sections-nav {
+   position: fixed;
+   top: 50%;
+   left: 35px;
+   margin: 0;
+   padding: 20px 0 0 0;
+   list-style: none;
+   z-index: 5;
+   transform: translateY(-50%);
+
+   &_item {
+      padding: 5px;
+      margin-bottom: 20px;
+      cursor: pointer;
+
+      span {
+         display: block;
+         width: 6px;
+         height: 6px;
+         border-radius: 100%;
+         background-color: #3b755c;
+         box-shadow: 0 0 0 0 #3b755c;
+         transition: all 0.3s;
+      }
+      &.__active {
+         cursor: default;
+         
+         span {
+            background-color: #82ca65;
+            box-shadow: 0 0 0 0 #82ca65;
+         }
+         &:hover {
+            span {
+               transform: none;
+               box-shadow: 0 0 0 0 #82ca65;
+            }
+         }
+      }
+      &:hover {
+         span {
+            box-shadow: 0 0 0 2px #3b755c;
+         }
+      }
+   }
+}

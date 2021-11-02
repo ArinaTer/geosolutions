@@ -1,0 +1,30 @@
+/**
+ * Floating Label
+ */
+
+.floating-label {
+	position: relative;
+
+	input:focus,
+	textarea:focus,
+	input:valid,
+	textarea:valid {
+		& + label {
+			top: 0;
+			transform: translateY(-100%);
+		}
+	}
+	label {
+		position: absolute;
+		pointer-events: none;
+		transform: translateY(-50%);
+		transition: all 0.3s;
+	}
+	label.error {
+		color: #bd4646;
+		
+		& + label {
+			display: none;
+		}
+	}
+}

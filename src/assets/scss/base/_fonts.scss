@@ -1,0 +1,25 @@
+/**
+ * Fonts
+ */
+
+@font-face {
+	font-family: 'Metronic Pro';
+	src: url('../fonts/mostardesign_-_metronicproregular-webfont.eot');
+    src: url('../fonts/mostardesign_-_metronicproregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mostardesign_-_metronicproregular-webfont.woff2') format('woff2'),
+         url('../fonts/mostardesign_-_metronicproregular-webfont.woff') format('woff'),
+         url('../fonts/mostardesign_-_metronicproregular-webfont.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Elektra Medium Pro';
+    src: url('../fonts/elektramediumpro-webfont.eot');
+    src: url('../fonts/elektramediumpro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektramediumpro-webfont.woff2') format('woff2'),
+         url('../fonts/elektramediumpro-webfont.woff') format('woff'),
+         url('../fonts/elektramediumpro-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
